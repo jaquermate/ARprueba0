@@ -62,6 +62,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //createBall(position: hitVector)
         //createBall2()
         createCuboUFV(position: hitVector)
+        //createBolaMundo(position: hitVector)
     }
     
     func createBall(position : SCNVector3){
@@ -80,15 +81,33 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         ballShape.firstMaterial?.diffuse.contents = UIColor.brown
     }
     func createCuboUFV(position: SCNVector3){
-        var box = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0)
+        var material = SCNMaterial()
+        material.isDoubleSided = false
+        material.diffuse.contents = UIImage(named: "/Users/jmartinezdejuan/Documents/XCode Projects/ARprueba0/ARprueba0/images/texture2.png")
+        var cube: SCNGeometry? = SCNBox(width: 1.0, height: 1.0, length: 1, chamferRadius: 0)
+        var node = SCNNode(geometry: cube)
+        node.geometry?.materials = [material]
+        node.position = position
+       // var box = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0)
+        
+        
+       // material.locksAmbientWithDiffuse = true
+        //material.diffuse.contents = UIColor.red
+        //box.materials = [material]
+        //var boxNode = SCNNode(geometry: box)
+        //boxNode.position = position
+        
+        sceneView.scene.rootNode.addChildNode(node)
+        
+    }
+    func createBolaMundo(position: SCNVector3){
+        let sphere = SCNSphere(radius: 0.3)
         let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named: "texture.png")
-        box.materials = [material]
-        var boxNode = SCNNode(geometry: box)
-        boxNode.position = position
-        
-        sceneView.scene.rootNode.addChildNode(boxNode)
-        
+        material.diffuse.contents = UIImage(named: "/Users/jmartinezdejuan/Documents/XCode Projects/ARprueba0/ARprueba0/images/brick.png")
+        sphere.materials = [material]
+        let sphereNode = SCNNode(geometry: sphere)
+        sphereNode.position = position
+        sceneView.scene.rootNode.addChildNode(sphereNode)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

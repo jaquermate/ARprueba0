@@ -49,7 +49,10 @@
 		AD6912D220AB531B00DA0A6C /* ARprueba0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARprueba0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6912D620AB531B00DA0A6C /* ARprueba0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARprueba0UITests.swift; sourceTree = "<group>"; };
 		AD6912D820AB531B00DA0A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD6912E520AB78B300DA0A6C /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = texture.png; path = "/Users/jmartinezdejuan/Documents/XCode Projects/ARprueba0/ARprueba0/texture.png"; sourceTree = "<absolute>"; };
+		AD6912E520AB78B300DA0A6C /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = texture.png; path = "/Users/jmartinezdejuan/Documents/XCode Projects/ARprueba0/ARprueba0/images/texture.png"; sourceTree = "<absolute>"; };
+		ADF9187220B1DB6F00913124 /* brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brick.png; path = "/Users/jmartinezdejuan/Documents/XCode Projects/ARprueba0/ARprueba0/images/brick.png"; sourceTree = "<absolute>"; };
+		ADF9187420B1DF7900913124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Base; path = Base.lproj/earth.jpg; sourceTree = "<group>"; };
+		ADF9187720B1DFC800913124 /* texture2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = texture2.png; path = "/Users/jmartinezdejuan/Documents/XCode Projects/ARprueba0/ARprueba0/images/texture2.png"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +103,7 @@
 		AD6912B320AB531A00DA0A6C /* ARprueba0 */ = {
 			isa = PBXGroup;
 			children = (
-				AD6912E520AB78B300DA0A6C /* texture.png */,
+				ADF9187620B1DF9A00913124 /* images */,
 				AD6912B420AB531A00DA0A6C /* AppDelegate.swift */,
 				AD6912B620AB531A00DA0A6C /* art.scnassets */,
 				AD6912B820AB531A00DA0A6C /* ViewController.swift */,
@@ -128,6 +131,17 @@
 				AD6912D820AB531B00DA0A6C /* Info.plist */,
 			);
 			path = ARprueba0UITests;
+			sourceTree = "<group>";
+		};
+		ADF9187620B1DF9A00913124 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9187220B1DB6F00913124 /* brick.png */,
+				AD6912E520AB78B300DA0A6C /* texture.png */,
+				ADF9187520B1DF7900913124 /* earth.jpg */,
+				ADF9187720B1DFC800913124 /* texture2.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +330,14 @@
 				AD6912C020AB531A00DA0A6C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ADF9187520B1DF7900913124 /* earth.jpg */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF9187420B1DF7900913124 /* Base */,
+			);
+			name = earth.jpg;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
