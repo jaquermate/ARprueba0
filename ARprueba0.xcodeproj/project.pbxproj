@@ -49,6 +49,7 @@
 		AD6912D220AB531B00DA0A6C /* ARprueba0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARprueba0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6912D620AB531B00DA0A6C /* ARprueba0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARprueba0UITests.swift; sourceTree = "<group>"; };
 		AD6912D820AB531B00DA0A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6912E520AB78B300DA0A6C /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = texture.png; path = "/Users/jmartinezdejuan/Documents/XCode Projects/ARprueba0/ARprueba0/texture.png"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		AD6912B320AB531A00DA0A6C /* ARprueba0 */ = {
 			isa = PBXGroup;
 			children = (
+				AD6912E520AB78B300DA0A6C /* texture.png */,
 				AD6912B420AB531A00DA0A6C /* AppDelegate.swift */,
 				AD6912B620AB531A00DA0A6C /* art.scnassets */,
 				AD6912B820AB531A00DA0A6C /* ViewController.swift */,
